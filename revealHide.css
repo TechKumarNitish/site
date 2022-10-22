@@ -1,0 +1,32 @@
+.toggle-btn{
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width:767px) {
+    .toggle-btn-visible{
+        display: block;
+    }
+    .toggle-target-hidden{
+        display: none;
+    }
+    .toggle-target-expanded{
+        display: block;
+    }
+}
+.group .toggle-btn-visible{
+    display: block;
+}
+.group .toggle-target-hidden{
+    display: none;
+}
+.group .toggle-target-expanded{
+    display: block;
+}
+
+.read-mode{
+    text-decoration: underline;
+    color: blue;
+}
+.read-mode:hover{
+    text-decoration: none;
+}

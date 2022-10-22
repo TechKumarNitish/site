@@ -1,0 +1,254 @@
+/*....................................................Animation............................................*/
+/*................................Bounce Back....................................*/
+body{
+    background-color: black;
+}
+@-webkit-keyframes fadeBounce {
+	
+	0% {
+		opacity: 0;
+		transform: translateY(-200%);
+	}
+	
+	40% {
+		transform: translateY(0);
+	}
+	
+	55% {
+		transform: translateY(-6px);
+	}
+	
+	70% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+	85% {
+		transform: translateY(-3px);
+	}
+		
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+}
+
+@keyframes fadeBounce {
+	
+	0% {
+		opacity: 0;
+		transform: translateY(-200%);
+	}
+	
+	40% {
+		transform: translateY(0);
+	}
+	
+	55% {
+		transform: translateY(-6px);
+	}
+	
+	70% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+	85% {
+		transform: translateY(-3px);
+	}
+		
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+}
+
+
+@keyframes slidespin {
+    50%{
+        transform: translateX(150%) scale(.5);
+    }
+    75%{
+        transform: translateX(150%) rotate(180deg) scale(.5);
+    }
+    100%{
+        transform: translateX(300%) rotate(10deg);
+    }
+}
+/*...............................end bounce back..................................*/
+/*....................................star........................................*/
+@-webkit-keyframes slideSpin {
+	
+	50% {
+		transform: translateX(150%) scale(.5);
+	}
+	
+	75% {
+		transform: translateX(150%) rotate(180deg) scale(.5);
+	}
+			
+	100% {
+		transform: translateX(300%) rotate(180deg);
+	}
+	
+}
+
+@keyframes slideSpin {
+	
+	50% {
+		transform: translateX(150%) scale(.5);
+	}
+	
+	75% {
+		transform: translateX(150%) rotate(180deg) scale(.5);
+	}
+			
+	100% {
+		transform: translateX(300%) rotate(180deg);
+	}
+	
+}
+.star {
+	-webkit-animation: slideSpin 2s infinite alternate forwards;
+	animation: slideSpin 2s infinite alternate forwards;
+	width: 25%;
+	height: auto;
+}
+/*......................................end star............................*/
+.box-a{
+    opacity: 0;
+    animation:fadeBounce 1s forwards;
+    -webkit-animation: fadeBounce 1s forwards;
+    box-shadow: inset 3px 3px 5px rgba(0,0 ,0 ,.33),10px 5px 5px rgba(0,0 ,0 , .15);
+    border-radius: 10px;
+    /*border-radius: 10px 25px;
+    border-radius: 10px 10px 25px 25px;
+    border-radius: 40px/10px;*/
+}
+.boxes :nth-child(2) .box-a{
+    animation-delay: .5s;
+}
+.boxes :nth-child(3) .box-a{
+    animation-delay: 1s;
+}
+.boxes :nth-child(4) .box-a{
+    animation-delay: 1.5s;
+}
+
+.box-b{
+    text-align: center;
+    background-color: #ccc;
+    width: 200px;
+    height: 200px; line-height: 200px;
+    margin-bottom: 40px;
+    /*border-radius: 100px;*/
+    border-radius: 50%;
+    transition: all 4s ease-out;
+    
+}
+/*.............................transition................................*/
+.box-b:hover {
+    transform: rotate(360deg);
+    background-image: url(source/image/nitish.png);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*............................end transition........................................*/
+.box-c{
+    color: #fff;
+    text-align: center;
+    background-color: #444;
+    width: 300px;
+    height: 600px; 
+    line-height: 200px;
+    margin-bottom: 40px;
+    /*border-radius: 175px/100px;*/
+    border-radius: 50%;
+    
+}
+/*.............................transition................................*/
+.box-c:hover {
+    background-image: url(source/image/4.jpg);
+    background-position: center,center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*............................end transition........................................*/
+.example-a{
+    color: black;
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    
+    /*
+    transform: rotate(25deg);
+    transform: scale(.8);
+    transform: skewX(25deg) skewY(25deg);
+    */
+    transform: rotate(25deg) scale(.8);
+}
+.example-b{
+    color: white;
+    background-color: #444;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    /*
+    transform: scale(1.1);
+    transform-origin: 0 0;
+    */
+    /*
+    transform: translateY(40px);
+    transform:translate(100px 50px);*/
+    transform: rotate(-25deg) scale(.8);
+}
+/*..............................transition......................................*/
+.site-nav a{
+    /*transition-property: color, background-color;*/
+    transition-property: all;
+    transition-duration: 2s;
+    
+}
+/*................................end transition....................................*/
+.image-banner{
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.image-banner img{
+    display: block;
+    /*transition-property: all;
+    transition-duration: 2;*/
+    transition: all 5s;
+
+}
+.image-banner:hover img{
+ transform: scale(1.5);   
+}
+
+.banner-desc{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    background-color:rgba(0,0,0,0.65);
+    padding: 15px 25px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 5s;
+    transform: translateY(100%);
+}
+
+/*.............................transition.......................................*/
+.image-banner:hover .banner-desc{
+    transform: translateY(0);  
+    opacity: 1; 
+}

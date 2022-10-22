@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>        
+    <head>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="font.css">
+        <link href="responsiveGrid.css" rel="stylesheet">
+        <link href=BoxShadow.css rel="stylesheet">
+        <link href="slideShow.css" rel="stylesheet">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="cycle2.js"></script>
+        <script type="text/javascript" src="declarativeToggle.js"></script>
+        <script type="text/javascript" src="lightbox.min.js"></script>
+
+        <link rel="stylesheet" href="revealHide.css">
+        <link rel="stylesheet" href="imageModel.css">
+        <link rel="stylesheet" href="lightbox.css">
+
+
+        <title>le-62 | Image Model</title>
+    </head>
+    <body>
+        
+        <header class="section">
+
+        <!-- container -->
+        <div class="container">
+            <h1>Website Title</h1>
+            <p class="hide-small">Website slogan included here.</p>
+            <span data-toggle-target=".site-nav" class="toggle-btn">Menu</span>
+            <nav class="site-nav">
+            <ul class="group">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li class="hide-small"><a href="#">FAQs</a></li>
+                <li class="hide-small"><a href="#">Links</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            </nav>
+        </div>
+        <!-- /container -->
+
+        </header>
+
+        <div class="content-area group section">
+
+        <!-- container -->
+            <div class="container">
+
+                <!-- row -->
+                <div class="row">
+
+                <!-- col -->
+                    <div class="col col-md-8 push-down-sm">
+
+                        <h2>Welcome to the page!</h2>
+                        <div class="thumbnail group">
+                            <a href="source/image/18.jpg" data-lightbox="gallery" data-title="strawberry">
+                                <img src="source/thumbnail/18thumb.jpg" alt="strawberry">
+                            </a>
+
+                            <a href="source/image/9.jpg" data-lightbox="gallery" data-title="ChocoPie">
+                                <img src="source/thumbnail/9thumb.jpg" alt="dock">
+                            </a>
+
+                            <a href="source/image/17.jpg" data-lightbox="gallery" data-title="Cateberry">
+                                <img src="source/thumbnail/17thumb.jpg" alt="bee">
+                            </a>
+
+                            <a href="source/image/11.jpg" data-lightbox="gallery" data-title="Cutiie">
+                                <img src="source/thumbnail/11thumb.jpg" alt="bear">
+                            </a>
+
+                            <a href="source/image/19.jpg" data-lightbox="gallery" data-title="Angel">
+                                <img src="source/thumbnail/19thumb.jpg" alt="squirrel">
+                            </a>
+
+                            <a href="source/image/20.jpg" data-lightbox="gallery" data-title="Beauty">
+                                <img src="source/thumbnail/20thumb.jpg" alt="trees">
+                            </a>
+
+                            <a href="source/image/25.jpg" data-lightbox="gallery" data-title="Charming">
+                                <img src="source/thumbnail/25thumb.jpg" alt="water">
+                            </a>
+
+                            <a href="source/image/28.jpg" data-lightbox="gallery" data-title="pretty">
+                                <img src="source/thumbnail/28thumb.jpg" alt="duck">
+                            </a>
+                        </div>
+
+                        <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+                            <span class="cycle-prev">&laquo;</span>
+                            <span class="cycle-next">&raquo;</span>
+                            <span class="cycle-pager"></span>
+
+                            <div class="slide">
+                                <img src="source/image/bee.jpg">
+                                <div class="slide-text">
+                                    <h3>Bee Title Here</h3>
+                                    <p>This is the caption or descriptive for the bee. <a href="#" class="btn-a">Call to action!</a></p>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <img src="source/image/duck.jpg">
+                                <div class="slide-text">
+                                    <h3>Duck Title Here</h3>
+                                    <p>This is the caption or descriptive for the duck.<a href="#" class="btn-a">Call to action!</a></p>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <img src="source/image/flower.jpg">
+                                <div class="slide-text">
+                                    <h3>Flower Title Here</h3>
+                                    <p>This is the caption or descriptive for the flower.<a href="#" class="btn-a">Call to action!</a> </p>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="slide">
+                                <img src="source/5.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="source/8.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="source/9.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="source/10.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="source/11.jpg" alt="">
+                            </div>
+                            -->
+
+                        </div>
+                       
+                        <h2>Important Text</h2>
+                        <p>
+                            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodThis is sqireel. This is a animal. It has four legs ,one nose, two eyes, one tail.
+                            It climbs the tree very easily and smoothly. It is very often found on the tree
+                            in village area.This is sqireel. This is a animal. It has four legs ,one nose, two eyes, one tail.
+                            It climbs the tree very easily and smoothly. It is very often found on the tree
+                            in village area.This is sqireel. This is a animal. It has four legs ,one nose, two eyes, one tail.
+                            It climbs the tree very easily and smoothly. It is very often found on the tree
+                            <span data-toggle-target=".full-text" data-toggle-text="Hide the full text..." class="toggle-btn read-mode">Read the full text... </span>
+                        </p>
+                         <!-- fu -->
+                        <div class="full-text">
+                            <h2>Full Text</h2>
+                            <p>
+                                This is sqireel. This is a animal. It has four legs ,one nose, two eyes, one tail.
+                                It climbs the tree very easily and smoothly. It is very often found on the tree
+                                in village area.Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem
+                                ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodThis is sqireel. This is a animal. It has four legs ,one nose, two eyes, one tail.
+                                It climbs the tree very easily and smoothly. It is very often found on the tree
+                                in village area.This is sqireel. This is a animal. It has four legs ,one nose, two eyes, one tail.
+                                It climbs the tree very easily and smoothly. It is very often found on the tree
+                                in village area.This is sqireel. This is a animal. It has four legs ,one nose, two eyes, one tail.
+                                It climbs the tree very easily and smoothly. It is very often found on the tree
+                                in village area.
+                            </p>
+                        </div><!-- full text -->
+                        <!-- row -->
+                        <div class="row">
+
+                            <!--col-->
+                            <div class="col">
+                                <div class="image-banner">
+                                    <img src="source/image/34.jpg">
+                                    <div class="banner-desc">
+                                        <p>Kisi se dil lag jane ko mohabbat<br>
+                                            nahi kehte jiske bina dil na lage<br>
+                                            use mohabbat kehte hai.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+
+                        <!-- row -->
+                        <div class="row boxes">
+
+                            <!-- col -->
+                            <div class="col col-sm-6 col-lg-3">
+                                <!-- box-a -->
+                                <div class="box-a">
+                                <p>Key feature 1</p>
+                                </div>
+                                <!-- /box-a -->
+                            </div>
+                            <!-- /col -->
+
+                            <!-- col -->
+                            <div class="col col-sm-6 col-lg-3">
+                                <!-- box-a -->
+                                <div class="box-a">
+                                <p>Key feature 2</p>
+                                </div>
+                                <!-- /box-a -->
+                            </div>
+                            <!-- /col -->
+
+                            <!-- col -->
+                            <div class="col col-sm-6 col-lg-3">
+                                <!-- box-a -->
+                                <div class="box-a">
+                                <p>Key feature 3</p>
+                                </div>
+                                <!-- /box-a -->
+                            </div>
+                            <!-- /col -->
+
+                            <!-- col -->
+                            <div class="col col-sm-6 col-lg-3">
+                                <!-- box-a -->
+                                <div class="box-a">
+                                    <p>Key feature 4</p>
+                                </div><!-- /box-a -->
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+                        
+
+                        <!-- row -->
+                        <div class="row">
+
+                            <!-- col -->
+                            <div class="box-b">
+                                
+                                <p>i wish i could  see you</p>
+                            </div><!-- /col -->
+
+                        </div><!-- /row -->
+                        <!-- row -->
+                        <div class="row">
+
+                            <!-- col -->
+                            <div class="box-c">
+                                
+                                <p>i wish i could  see me</p>
+                            </div><!-- /col -->
+
+                        </div><!-- /row -->
+                        <div class="row">
+                             <!-- col -->
+                             <div class="col col-xs-6">
+                                <div class="example-b">
+                                    <p>Cutiie</p>
+                                    <img src="source/image/27.jpg">
+                                </div>
+                               
+                            </div>
+                            <!-- /col -->
+
+                            <!-- col -->
+                            <div class="col col-xs-6">
+                                <div class="example-a">
+                                    <p>Angel</p>
+                                    <img src="source/image/24.jpg">
+                                </div>
+                            </div>
+                            <!-- /col -->
+
+                        </div><!-- /row -->
+
+                        <!-- row -->
+                        <div class="row">
+
+                            <!-- col -->
+                            <div class="col col-xs-6">
+                                <img src="source/image/3.jpg">
+                            </div>
+                            <!-- /col -->
+
+                            <!-- col -->
+                            <div class="col col-xs-6">
+                                <img src="source/image/2.jpg">
+                            </div>
+                            <!-- /col -->
+
+                        </div>
+                        <!-- /row -->
+                        <p>Tu samne ho jahan main v jaun</p>
+                        <audio controls><source src="source/song/Love songs Tu samne ho jahan main v jaun ....   (LYRIC).mp3"
+                            type="audio/mpeg"></audio>
+                        <p>Ek Haseena thi</p>
+                        <audio controls><source src="source/song/Haseena.mp3"
+                                type="audio/mpeg"></audio>
+                        <p>Song for you by me...</p>
+                        <video width="100%" height="auto" controls>
+                            <source src="source/song/songBraish.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                          </video><br>
+                        <img src="source/image/star.png" class="star">
+
+                    </div>
+                    <!-- /col -->
+
+                    <!-- col -->
+                    <div class="col col-md-4 sidebar">
+                        <h3>Sidebar Heading</h3>
+                        <p>Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                    <!-- /col -->
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /container -->
+
+        </div>
+
+        <footer>
+        <p>&copy; 2017 - This is the footer.</p>
+        </footer>
+    </body>
+</html>
